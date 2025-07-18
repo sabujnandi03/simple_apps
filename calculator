@@ -1,0 +1,26 @@
+import math
+operation=input("What operation would you like to perform? Accepted operations are: add, subtract, multiply, divide, power").lower()
+
+if operation not in ("add", "subtract", "multiply", "divide", "power"):
+    print("Invalid operation: Choose from: add, subtract, multiply, divide, power")
+else:
+    a=input("Provide the first number")
+    b=input("Provide the second number")
+
+    a=float(a)
+    b=float(b)
+    if operation=="add":
+        result=a+b
+        print(result)
+    if operation=="subtract":
+        result=a-b
+        print(result)
+    if operation=="multiply":
+        result=a*b
+        print(result)
+    if operation=="divide":
+        result=a/b
+        print(result)
+    if operation=="power":
+        result=math.pow(a,b)
+        print(result)
